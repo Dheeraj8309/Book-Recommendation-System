@@ -1,0 +1,21 @@
+n=int(input())
+K=int(input())
+A=[]
+ans=n+2
+for _ in range(n):
+    A.append(int(input()))
+s=0
+j=0
+i=0
+ans=n+2
+while(i<n):
+    s+=A[i]
+    if(s*(i-j+1)>=K):
+        ans=min(ans,i-j+1)
+        s=s-A[i]
+        j=j+1
+    i=i+1
+if(ans>n):
+    print(-1)
+else:
+    print(ans)
