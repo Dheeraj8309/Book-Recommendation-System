@@ -27,20 +27,6 @@ Frontend: HTML, CSS
 
 Notebook: Jupyter Notebook
 
-Project Structure
-.
-├── Flask/
-│   ├── templates/
-│   │   ├── home.html         # The main landing page
-│   │   ├── extractor.html    # The page for selecting a book
-│   │   └── result.html       # The page to display recommendations
-│   │
-│   ├── app1.py               # The main Flask application file
-│   ├── book.pkl              # The pre-trained k-NN model
-│   └── us_canada_user_rating_pivot1.csv # The dataset used by the model
-│
-└── Book.ipynb                # Jupyter Notebook for data processing and model training
-
 How to Run This Project Locally
 To run this project on your own machine, follow these steps:
 
